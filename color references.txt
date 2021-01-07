@@ -1,0 +1,5 @@
+gray - 627A7F
+red - BA3B45
+green - 59FFA0
+background - 1C3041
+blue - 2DE1FC
