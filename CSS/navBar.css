@@ -1,0 +1,69 @@
+#dropDownContentContainer{
+    display:none;
+}
+.dropDownContainer:hover#dropDownContentContainer{
+    display:inline;
+}
+.sliderContainer{
+    display: inline-table;
+    width: 20%;
+}
+.slider{
+  display: inline-block;
+  appearance: none;
+  width: 100%; 
+  height: 25px; 
+  background: #627A7F; 
+  outline: none; 
+  opacity: 0.5; 
+  transition: opacity .2s;
+}
+.slider::-webkit-slider-thumb:hover{
+    box-shadow: 0px 0px 2px 1px #2DE1FC; 
+}
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 5%; 
+  height: 25px; 
+  background: #2DE1FC; 
+  cursor: pointer; 
+}
+.dropDownButton{
+  background-color: #627A7F;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+#algorithmDropDownContainer{
+    display: inline-block;
+    position:relative;
+    color:white;
+    font: 15px arial, sans serif;
+}
+#algorithmDropDownContainer:hover #algorithmDropDownButton {
+    box-shadow: 0px 0px 2px 1px #627A7F; 
+
+}
+#algorithmDropDownContainer:hover #algorithmDropDownContent {
+    display:inline-block;
+}
+#algorithmDropDownContent{
+    display: none;
+    position:absolute;
+    background-color: rgba(73, 79, 80, 0.692);
+    box-shadow: 0px 0px 2px 1px #627A7F; 
+    z-index:1;
+}
+#algorithmDropDownContent li{
+    color:white;
+    padding: 5px 0px;
+    text-decoration:none;
+    display:block;
+}
+#algorithmDropDownContent li:hover{
+    box-shadow: 0px 0px 2px 1px #bcd2d66c; 
+    background-color: #bcd2d66c;
+}

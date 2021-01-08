@@ -2,17 +2,58 @@
 <head>
     <link rel="stylesheet" href="CSS/Body.css">
     <link rel="stylesheet" href="CSS/Grid.css">
+    <link rel="stylesheet" href="CSS/navBar.css">
 </head>
 <body>
-    <div id = "dropDownContainer" class = "container">
+    <div id = "navBarDropDownContainer" class = "dropDownContainer">
+        <div id = "dropDownContentContainer" class = "dropDownContentContainer">
+        <div id = "sliderDiv" class = "sliderContainer">
+        <form class = "sliderForm">
+            <input type="range", min = "15" max = "60" name ="sizeInput"
+             value = "15" class = "slider" id = "slider" oninput="this.form.sizeOutput.value = this.value"/>
+             <div class = "outputDiv">
+             <output id = "output" type ="number" name = "sizeOutput" min = "1" max = "60" value = "15"
+             oninput="this.form.sizeInput.value = this.value">speed</output>
+             </div>
+        </form>
+        </div>
+
+        <div id = "algorithmDropDownContainer">
+            <div>
+            <button id = "algorithmDropDownButton" class = "dropDownButton"> Algorithms</button>
+            </div>
+            <div id = "algorithmDropDownContent">
+            <ul>
+                <li>
+                    A-Star
+                </li>
+                <li>
+                    Depth First Search
+                </li>
+                <li>
+                    Breadth First Search
+                </li> 
+                <li>
+                    Dijkstra's Algorithm
+                </li>
+                <li>
+                    Best First Search
+                </li>
+            </ul> 
+            </div>
+
+        </div>
+
         <!---
             // speed selector
+            
             // target node selector
             // node state changer locked or unlocked
             //algorithm selector
                 -- explanantion
             animate
          -->
+         </div>
     </div>
     <div id = "Grid" class = "Grid">
         </div>
