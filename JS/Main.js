@@ -31,6 +31,4 @@ document.body.clientHeight;
     } 
    }
    generateGrid();
-   let Animation = new Animate(); 
-   Animation.animate(cellArray,0,0);
 }
